@@ -59,12 +59,13 @@ resources:
  - argocd/namespaces/namespace-patch-operator.yaml
  - argocd/patch-operator.yaml
  - argocd/patch-operator-creation-time-config.yaml
+ - argocd/patch-operator-test.yaml
 
  # MachineSets and Infra Nodes
  #- unneeded for IBM Cloud ROKS with ODF add-on configured
 #  - argocd/machinesets.yaml
 #  - argocd/infraconfig.yaml
- - argocd/machinesets-vsphere.yaml
+#  - argocd/machinesets-vsphere.yaml
 
  # OpenShift Data Foundation aka OpenShift Container Storage
  #- unneeded for IBM Cloud ROKS with ODF add-on configured
