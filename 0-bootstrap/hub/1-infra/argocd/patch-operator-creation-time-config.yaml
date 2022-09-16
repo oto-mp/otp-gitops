@@ -14,7 +14,7 @@ spec:
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: patch-operator/creation-time-patch-inject-config
+    path: patch-operator/creation-time-patch-injection-config
   syncPolicy:
     automated:
       prune: true
