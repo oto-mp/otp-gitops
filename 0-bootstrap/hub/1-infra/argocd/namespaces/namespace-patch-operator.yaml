@@ -1,20 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: patch-operator
-  annotations:
-    argocd.argoproj.io/sync-wave: "100"
+  name: patch-operator-namespace
+  namespace: openshift-gitops
   labels:
     gitops.tier.layer: infra
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
+  annotations:
+    argocd.argoproj.io/sync-wave: "100"
 spec:
   destination:
-    namespace: patch-operator
+    namespace: open-cluster-management
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: patch-operator/operator
+    path: namespaces/patch-operator
   syncPolicy:
     automated:
       prune: true

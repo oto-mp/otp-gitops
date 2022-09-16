@@ -59,6 +59,9 @@ resources:
  # OpenShift Data Foundation aka OpenShift Container Storage
  #- unneeded for IBM Cloud ROKS with ODF add-on configured
  - argocd/namespaces/namespace-openshift-storage.yaml
+ - argocd/rbac/rbac-patch-operator.yaml
+ - argocd/namespaces/namespace-patch-operator.yaml
+ - argocd/patch-operator.yaml
 #  - argocd/storage.yaml
  
  # MachineSets and Infra Nodes
