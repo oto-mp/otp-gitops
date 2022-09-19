@@ -16,6 +16,11 @@ spec:
   project: infra
   source:
     path: machinesets-vsphere
+    helm:
+      releaseName: machinesets-vsphere
+      values: |
+        cloudProvider:
+          name: "vsphere"
   syncPolicy:
     automated:
       prune: true
