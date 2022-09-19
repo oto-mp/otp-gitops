@@ -21,6 +21,11 @@ spec:
       values: |
         cloudProvider:
           name: "vsphere"
+        vsphere:
+          folder: "/IBMCloud/vm/ocp-gym/gym-50b01ssfct-z60c91ei"
+          resourcePool: >-
+            /IBMCloud/host/ocp-gym/Resources/Cluster Resource Pool/Gym Member
+            Resource Pool/gym-50b01ssfct-z60c91ei
   syncPolicy:
     automated:
       prune: true
