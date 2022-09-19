@@ -55,11 +55,11 @@ resources:
 
  # Quay Registry
 #  - argocd/namespaces/namespace-quay-registry.yaml
- - argocd/rbac/rbac-patch-operator.yaml
- - argocd/namespaces/namespace-patch-operator.yaml
- - argocd/patch-operator.yaml
- - argocd/patch-operator-creation-time-config.yaml
- - argocd/patch-operator-test.yaml
+#  - argocd/rbac/rbac-patch-operator.yaml
+#  - argocd/namespaces/namespace-patch-operator.yaml
+#  - argocd/patch-operator.yaml
+#  - argocd/patch-operator-creation-time-config.yaml
+#  - argocd/patch-operator-test.yaml
 
  # MachineSets and Infra Nodes
  #- unneeded for IBM Cloud ROKS with ODF add-on configured
