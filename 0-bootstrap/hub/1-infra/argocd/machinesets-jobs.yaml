@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: machinesets-vsphere
+  name: machinesets-jobs
   namespace: openshift-gitops
   labels:
     gitops.tier.layer: infra
@@ -15,9 +15,9 @@ spec:
     server: https://kubernetes.default.svc
   project: infra
   source:
-    path: machinesets-vsphere
+    path: machinesets-jobs
     helm:
-      releaseName: machinesets-vsphere
+      releaseName: machinesets-jobs
       values: |
         cloudProvider:
           name: "vsphere"
